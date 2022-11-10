@@ -3,22 +3,22 @@
 // @include reset(); // Сброс стилей
 
 // Переменные для кастомизации Bootstrap 5
-$grid-gutter-width: 15px; // Отступы между колонками
+$grid-gutter-width: 40px; // Отступы между колонками
 $grid-columns: 12; // Колличество колонок
 $grid-breakpoints: ( // Брейкпоинты
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  xl: 1100px,
+  xxl: 1250px
 ) !default;
 $container-max-widths: ( // Максимальная ширина контейнера
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  xl: 1050px,
+  xxl: 1240px
 ) !default;
 $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
 
@@ -167,16 +167,21 @@ $black: #0B1726;
 $yellow: #EEC912;
 $green: #15CE81;
 $blue: #3A82CF;
+$gray: #A5AEB7;
 
 // Подключение файлов
 @import 'blocks/settings';
 @import 'hamburgers/hamburgers';
-@import 'blocks/template';
-@import 'blocks/popup';
-@import 'blocks/tabs';
-@import 'blocks/accordion';
-@import 'blocks/js-scrollup';
-@import 'blocks/counter';
+@import 'blocks/btn';
+// @import 'blocks/template';
+// @import 'blocks/popup';
+// @import 'blocks/tabs';
+// @import 'blocks/accordion';
+// @import 'blocks/js-scrollup';
+// @import 'blocks/counter';
 @import 'blocks/header';
+@import 'blocks/welcome';
+
+
 @import 'blocks/footer';
 // @import 'blocks/menu';

@@ -1,0 +1,64 @@
+extends core/base.pug
+
+block title 
+  title Главная
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // welcome
+      section.welcome
+
+          .welcome__main 
+
+            .container 
+
+              .welcome__container 
+
+                .welcome__content 
+                  h1.title Earn 
+                    span 6.12% 
+                    | per month on currency fluctuations
+                  .welcome__text You may not understand anything about trading on the stock exchange, but the NiceBot robot will open and close transactions by itself, increasing the size of your account.
+                  .welcome__subtitle Alexy Frundel, 
+                    span taxi driver 
+                  .welcome__lists 
+                    ul.welcome__list 
+                      li – Open deposit 
+                        b 5 000$
+                      li – Connected 
+                        b MiloBot
+                    ul.welcome__list 
+                      li – Аfter 
+                        b 3 months 
+                        | the account balance is 
+                        span 6,253 $
+                      li – Profit of 
+                        span 1,253$ 
+                        | he withdrawn to card
+
+                .welcome__img 
+                  img(src="img/man.png", alt="")
+          
+          .welcome__items 
+            .row.g-0
+              .welcome__item-col.col-md-4 
+                .welcome__item 
+                  .welcome__item-price $ 856 256
+                  .welcome__item-text Profit for 2022
+              .welcome__item-col.col-md-4 
+                .welcome__item 
+                  .welcome__item-price $ 8 059 255
+                  .welcome__item-text Balance in robot management 
+              .welcome__item-col.col-md-4 
+                .welcome__item 
+                  .welcome__item-price 16 887 +
+                  .welcome__item-text Accounts in management
+      // /welcome
+
+    include core/footer.pug

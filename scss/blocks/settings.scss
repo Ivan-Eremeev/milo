@@ -12,7 +12,7 @@ textarea {
 body {
   min-width: 319px;
   background-color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   font-size: 16px;
   &.lock {
     overflow: hidden;
@@ -32,6 +32,7 @@ body {
 }
 .content {
   flex-grow: 1;
+  padding-top: 160px;
 }
 .navpage {
   padding: 100px 0;
@@ -40,10 +41,20 @@ body {
     margin-bottom: 20px;
   }
   ul {
+    list-style-type: none;
+    padding-left: 0;
     font-size: 18px;
     li {
       margin: 10px 0;
     }
+  }
+}
+.title {
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 800;
+  span {
+    color: $yellow;
   }
 }
 /* /settings */

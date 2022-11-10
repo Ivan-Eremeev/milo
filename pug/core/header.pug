@@ -1,5 +1,26 @@
 // header
 header#headerSticky.header
   .container 
-    
+    .header__container 
+      a(href="home.html").header__logo 
+        img(src="img/logo.svg", alt="")
+      .header__menu 
+        nav.header__nav 
+          ul.header__list 
+            li 
+              a(href="#") Home 
+            li 
+              a(href="#").active Statistics
+            li 
+              a(href="#") About MiloBot 
+            li 
+              a(href="#") Reviewrs 
+            li 
+              a(href="#") Affiliate program
+        .header__lang 
+          a(href="#") 
+            img(src="img/lang.svg", alt="")
+        .header__buttons 
+          .btn.btn--gray Login
+          .btn.btn--yellow Sign in
 //	/header
