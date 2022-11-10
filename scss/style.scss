@@ -1,0 +1,182 @@
+@import 'mixins/mixins';
+
+// @include reset(); // Сброс стилей
+
+// Переменные для кастомизации Bootstrap 5
+$grid-gutter-width: 15px; // Отступы между колонками
+$grid-columns: 12; // Колличество колонок
+$grid-breakpoints: ( // Брейкпоинты
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+$container-max-widths: ( // Максимальная ширина контейнера
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
+$gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
+
+$gutters: (
+  0: 0,
+  1: $grid-gutter-width * 0.5,
+  2: $grid-gutter-width * 0.75,
+  3: $grid-gutter-width * 1,
+  4: $grid-gutter-width * 1.5,
+  5: $grid-gutter-width * 2,
+);
+$spacers: (
+  0: 0,
+  1: $grid-gutter-width * 0.5,
+  2: $grid-gutter-width * 0.75,
+  3: $grid-gutter-width * 1,
+  4: $grid-gutter-width * 1.5,
+  5: $grid-gutter-width * 2,
+);
+
+@import 'bootstrap/bootstrap'; // Подключение бутстрап
+
+// Шрифты
+/* nunito-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/nunito-v25-latin_cyrillic-300.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/nunito-v25-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/nunito-v25-latin_cyrillic-300.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-300.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-300.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/nunito-v25-latin_cyrillic-300.svg#Nunito') format('svg');
+  /* Legacy iOS */
+}
+
+/* nunito-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v25-latin_cyrillic-regular.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/nunito-v25-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/nunito-v25-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/nunito-v25-latin_cyrillic-regular.svg#Nunito') format('svg');
+  /* Legacy iOS */
+}
+
+/* nunito-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/nunito-v25-latin_cyrillic-500.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/nunito-v25-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/nunito-v25-latin_cyrillic-500.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-500.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-500.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/nunito-v25-latin_cyrillic-500.svg#Nunito') format('svg');
+  /* Legacy iOS */
+}
+
+/* nunito-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/nunito-v25-latin_cyrillic-600.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/nunito-v25-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/nunito-v25-latin_cyrillic-600.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-600.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-600.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/nunito-v25-latin_cyrillic-600.svg#Nunito') format('svg');
+  /* Legacy iOS */
+}
+
+/* nunito-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/nunito-v25-latin_cyrillic-700.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/nunito-v25-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/nunito-v25-latin_cyrillic-700.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-700.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-700.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/nunito-v25-latin_cyrillic-700.svg#Nunito') format('svg');
+  /* Legacy iOS */
+}
+
+/* nunito-800 - latin_cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/nunito-v25-latin_cyrillic-800.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/nunito-v25-latin_cyrillic-800.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/nunito-v25-latin_cyrillic-800.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-800.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/nunito-v25-latin_cyrillic-800.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/nunito-v25-latin_cyrillic-800.svg#Nunito') format('svg');
+  /* Legacy iOS */
+}
+
+// Цвета
+$black: #0B1726;
+$yellow: #EEC912;
+$green: #15CE81;
+$blue: #3A82CF;
+
+// Подключение файлов
+@import 'blocks/settings';
+@import 'hamburgers/hamburgers';
+@import 'blocks/template';
+@import 'blocks/popup';
+@import 'blocks/tabs';
+@import 'blocks/accordion';
+@import 'blocks/js-scrollup';
+@import 'blocks/counter';
+@import 'blocks/header';
+@import 'blocks/footer';
+// @import 'blocks/menu';
