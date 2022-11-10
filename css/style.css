@@ -6311,6 +6311,11 @@ a {
   text-decoration: none;
 }
 
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 button,
 input,
 textarea {
@@ -6733,6 +6738,7 @@ body.lock {
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding: 50px 0;
+  position: relative;
 }
 .welcome .title {
   max-width: 560px;
@@ -6801,6 +6807,14 @@ body.lock {
 .welcome__item-price {
   font-size: 38px;
   margin-bottom: 6px;
+}
+.welcome__arrow {
+  width: 190px;
+  height: 120px;
+  fill: #EEC912;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 @media (max-width: 991.98px) {
   .welcome__item-price {
