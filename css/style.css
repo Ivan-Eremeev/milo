@@ -7347,5 +7347,15 @@ body.lock {
 }
 
 /* /numbers */
+/* statistics */
+.statistics {
+  padding: 130px 0 140px;
+}
+.statistics .title {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+/* /statistics */
 /* footer */
 /* /footer */

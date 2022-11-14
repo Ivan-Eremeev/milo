@@ -97,11 +97,11 @@ block content
       // /profit
 
       // numbers
-      .numbers
+      section.numbers
         .container 
           .row.gy-3
             .col-lg-6 
-              .title We trust only numbers and rely only on them!
+              h2.title We trust only numbers and rely only on them!
               .numbers__items 
                 .numbers__item 
                   .numbers__icon 
@@ -151,5 +151,15 @@ block content
                       svg(class="icon-arrow-right-medium")
                         use(xlink:href="img/sprite.svg#arrow-right-medium")
       // /numbers
+
+      // statistics
+      section.statistics.section-gray
+        .container 
+          h2.title Statistics of the 
+            span top 10 accounts 
+            | by income for the last week  
+          .statistics__table 
+
+      // /statistics
 
     include core/footer.pug
