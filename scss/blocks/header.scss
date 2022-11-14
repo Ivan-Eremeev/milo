@@ -212,12 +212,21 @@
         flex-grow: 0;
         margin-top: 0;
       }
-      .header__userblock {
+      .header__userblock--desktop {
         display: none !important;
       }
     }
     @include media-breakpoint-down(md) {
       padding: 10px 0;
+      .header__menu {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .header__menu {
+        max-width: none;
+      }
     }
   }
 }

@@ -6873,13 +6873,22 @@ body.lock {
     flex-grow: 0;
     margin-top: 0;
   }
-  #headerSticky.sticky .header__userblock {
+  #headerSticky.sticky .header__userblock--desktop {
     display: none !important;
   }
 }
 @media (max-width: 767.98px) {
   #headerSticky.sticky {
     padding: 10px 0;
+  }
+  #headerSticky.sticky .header__menu {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 575.98px) {
+  #headerSticky.sticky .header__menu {
+    max-width: none;
   }
 }
 
