@@ -45,6 +45,7 @@
     
   }
   @include media-breakpoint-down(md) {
+    padding: 50px 0;
     &__title {
       font-size: 26px;
       line-height: 30px;

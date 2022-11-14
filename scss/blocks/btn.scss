@@ -27,5 +27,8 @@
       background-color: lighten($gray, 5%);
     }
   }
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
 }
 /* /btn */

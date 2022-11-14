@@ -147,6 +147,12 @@
     &__content {
       padding-right: 0;
     }
+    &__install-btn {
+      width: 100%;
+      .btn {
+        width: 100%;
+      }
+    }
   }
 }
 /* /professional */

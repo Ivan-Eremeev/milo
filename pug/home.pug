@@ -262,9 +262,44 @@ block content
       // /manages
 
       // easy
-      .easy
+      section.easy
         .container 
-          
+          h2.title 
+            span Making money 
+            | with us is really easy
+          .easy__items 
+            .row.gy-2 
+              .col-lg-6 
+                .easy__item 
+                  .easy__head 
+                    .easy__icon 
+                      img(src="img/icons/gear.svg", alt="")
+                    .easy__title We do it
+                  ul.easy__list 
+                    li Renting a VPS server for the robot to work
+                    li Installing and configuring the robot
+                    li Monitoring on online
+                    li Collecting account statistics
+                    li We generate clear trade reports
+                    li Periodic verification of the algorithm and reconfiguration of the robot
+              .col-lg-6 
+                .easy__item 
+                  .easy__head 
+                    .easy__icon 
+                      img(src="img/icons/cocktail.svg", alt="")
+                    .easy__title You do it
+                  ul.easy__list 
+                    li Observe the work in a convenient interface
+                    li Withdraw profit every month
+                    li We generate clear trade reports
+                    li Collecting account statistics
+          .easy__bottom 
+            .easy__bottom-title Do you want to start right now?
+            .easy__bottom-btn 
+              a(href="#").btn.btn--yellow Start making a profit
+            .easy__arrow 
+              svg(class="icon-arrow3")
+                use(xlink:href="img/sprite.svg#arrow3")
       // /easy
 
     include core/footer.pug

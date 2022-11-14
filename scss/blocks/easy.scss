@@ -1,0 +1,125 @@
+/* easy */
+.easy { 
+  padding: 120px 0;
+  .title {
+    margin-bottom: 80px;
+  }
+  &__items {
+    margin-bottom: 90px;
+  }
+  &__item {
+    
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__icon {
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 38px;
+  }
+  &__list {
+    font-size: 21px;
+    line-height: 42px;
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      padding-left: 20px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 100%;
+        background-color: $black;
+        position: absolute;
+        top: 18px;
+        left: 0;
+      }
+    } 
+  }
+  &__bottom {
+    display: inline-block;
+    position: relative;
+  }
+  &__bottom-title {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+  &__bottom-btn {
+    .btn {
+      width: 100%;
+      max-width: 365px;
+    }
+  }
+  &__arrow {
+    width: 400px;
+    fill: $yellow;
+    position: absolute;
+    bottom: - 20px;
+    left: calc(100% - 40px);
+    z-index: -1;
+    svg {
+      width: 340px;
+      height: 320px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__arrow {
+      display: none;
+    }
+    &__bottom {
+      display: block;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    .title {
+      margin-bottom: 30px;
+    }
+    &__head {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__list {
+      font-size: 18px;
+      line-height: 30px;
+      li {
+        &:after {
+          width: 5px;
+          height: 5px;
+          top: 12px;
+        }
+      }
+    }
+    &__icon {
+      width: 80px;
+    }
+    &__items {
+      margin-bottom: 30px;
+    }
+    &__bottom-title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__bottom-btn {
+      .btn {
+        max-width: none;
+      }
+    }
+  }
+}
+/* /easy */
