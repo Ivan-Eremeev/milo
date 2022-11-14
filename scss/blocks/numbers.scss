@@ -1,0 +1,124 @@
+/* numbers */
+.numbers { 
+  padding: 130px 0;
+  .title {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  &__items {
+    margin-top: -60px;
+  }
+  &__item {
+    display: flex;
+    margin-top: 60px;
+  }
+  &__icon {
+    width: 90px;
+    flex-shrink: 0;
+    padding-top: 15px;
+    margin-right: 38px;
+  }
+  &__content {
+    
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+  }
+  &__price {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 160%;
+    color: $yellow;
+  }
+  &__text {
+    font-size: 21px;
+    line-height: 160%;
+    span {
+      font-weight: bold;
+    }
+  } 
+  &__reports {
+    margin-top: -55px;
+  }
+  &__report {
+    margin-top: 55px;
+    padding: 30px 36px 28px;
+    border-radius: 20px;
+    background-color: $grayL;
+  }
+  &__report-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  &__report-text {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+  &__report-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    a {
+      display: inline-flex;
+      align-items: center;
+      color: $blue;
+      fill: $blue;
+      svg {
+        width: 13px;
+        height: 10px;
+        margin-left: 5px;
+      }
+      &:hover {
+        color: lighten($blue, 10%);
+        fill: lighten($blue, 10%);
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__items {
+      margin-top: -30px;
+    }
+    &__item {
+      margin-top: 30px;
+    }
+    &__reports {
+      margin-top: -30px;
+    }
+    &__report {
+      margin-top: 30px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    &__title {
+      font-size: 22px;
+    }
+    &__price {
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__report-title {
+      font-size: 22px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__icon {
+      width: 70px;
+      margin-right: 20px;
+    }
+    &__reports {
+      margin-top: -20px;
+    }
+    &__report {
+      margin-top: 20px;
+      padding: 20px;
+    }
+  }
+}
+/* /numbers */

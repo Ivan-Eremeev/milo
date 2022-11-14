@@ -85,6 +85,14 @@
       flex-grow: 0;
     }
   }
+  @include media-breakpoint-down(lg) {
+    &__item {
+      flex-shrink: 1;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
   @include media-breakpoint-down(md) {
     padding: 50px 0;
     &__head {
@@ -106,9 +114,6 @@
     &__title {
       font-size: 22px;
       line-height: 26px;
-    }
-    &__arrow {
-      display: none;
     }
     &__btn {
       text-align: center;

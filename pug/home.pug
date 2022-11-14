@@ -96,4 +96,60 @@ block content
             .btn.btn--yellow Sign up now
       // /profit
 
+      // numbers
+      .numbers
+        .container 
+          .row.gy-3
+            .col-lg-6 
+              .title We trust only numbers and rely only on them!
+              .numbers__items 
+                .numbers__item 
+                  .numbers__icon 
+                    img(src="img/numbers/img1.svg", alt="")
+                  .numbers__content 
+                    .numbers__title Average profit for July 2022:
+                    .numbers__price +6,25%
+                    .numbers__text For all the time: 
+                      span +689,26%
+                .numbers__item 
+                  .numbers__icon 
+                    img(src="img/numbers/img2.svg", alt="")
+                  .numbers__content 
+                    .numbers__title Deals opened by robot for July 2022:
+                    .numbers__price 505 488
+                    .numbers__text For all the time: 
+                      span +689,26%
+                .numbers__item 
+                  .numbers__icon 
+                    img(src="img/numbers/img3.svg", alt="")
+                  .numbers__content 
+                    .numbers__title Profit in money for July 2022:
+                    .numbers__price $550 488.23
+                    .numbers__text For all the time: 
+                      span +689,26%
+            .col-lg-6 
+              .numbers__reports 
+                .numbers__report
+                  .numbers__report-title 6 years of testing history
+                  .numbers__report-text Average return of 9.86% per month based <br>on history tests since 2015.
+                  .numbers__report-link 
+                    a(href="#") View reports
+                      svg(class="icon-arrow-right-medium")
+                        use(xlink:href="img/sprite.svg#arrow-right-medium")
+                .numbers__report
+                  .numbers__report-title +6.12% per month on average for 2022
+                  .numbers__report-text Statistics collected on the basis of 596 <br>accounts of our clients.
+                  .numbers__report-link 
+                    a(href="#") View reports
+                      svg(class="icon-arrow-right-medium")
+                        use(xlink:href="img/sprite.svg#arrow-right-medium")
+                .numbers__report
+                  .numbers__report-title Profit over 600% in 3 years
+                  .numbers__report-text Real account statistics from <br>November 2019
+                  .numbers__report-link 
+                    a(href="#") View reports
+                      svg(class="icon-arrow-right-medium")
+                        use(xlink:href="img/sprite.svg#arrow-right-medium")
+      // /numbers
+
     include core/footer.pug
