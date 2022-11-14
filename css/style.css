@@ -7218,7 +7218,7 @@ body.lock {
 /* /profit */
 /* numbers */
 .numbers {
-  padding: 130px 0;
+  padding: 130px 0 125px;
 }
 .numbers .title {
   padding-top: 10px;
@@ -7353,7 +7353,98 @@ body.lock {
 }
 .statistics .title {
   max-width: 800px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+.statistics__table {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.statistics__table::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.statistics__table table {
+  width: 100%;
+  min-width: 900px;
+  border-spacing: 0 9px;
+  border-collapse: separate;
+}
+.statistics__table table tr td:not(:first-child) {
+  text-align: center;
+}
+.statistics__table table tr:first-child {
+  color: #A5AEB7;
+}
+.statistics__table table tr:first-child td {
+  padding: 10px 0;
+}
+.statistics__table table tr:not(.statistics__table table tr:first-child) {
+  background-color: #fff;
+}
+.statistics__table table tr:not(.statistics__table table tr:first-child) td {
+  padding: 9px;
+}
+.statistics__table table tr:not(.statistics__table table tr:first-child) td:first-child {
+  border-radius: 11px 0 0 11px;
+}
+.statistics__table table tr:not(.statistics__table table tr:first-child) td:last-child {
+  border-radius: 0 11px 11px 0;
+  color: #15CE81;
+  font-weight: bold;
+}
+.statistics__num {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 14px;
+  border-radius: 100%;
+  background-color: #EEC912;
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+}
+@media (max-width: 767.98px) {
+  .statistics {
+    padding: 50px 0;
+  }
+  .statistics__table table {
+    min-width: 0;
+    display: block;
+  }
+  .statistics__table table tbody {
+    display: block;
+    width: 100%;
+  }
+  .statistics__table table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 9px;
+    border-radius: 11px;
+  }
+  .statistics__table table tr:first-child {
+    display: none;
+  }
+  .statistics__table table tr:not(.statistics__table table tr:first-child) td {
+    padding: 4px 9px;
+  }
+  .statistics__table table tr td:not(:first-child) {
+    text-align: left;
+  }
 }
 
 /* /statistics */

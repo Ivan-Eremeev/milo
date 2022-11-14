@@ -3,7 +3,95 @@
   padding: 130px 0 140px;
   .title {
     max-width: 800px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  &__table {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    table {
+      width: 100%;
+      min-width: 900px;
+      border-spacing: 0 9px;
+      border-collapse: separate;
+      tr {
+        td {
+          &:not(:first-child) {
+            text-align: center;
+          }
+        }
+        &:first-child {
+          color: $gray;
+          td {
+            padding: 10px 0;
+          }
+        }
+        &:not(&:first-child) {
+          background-color: #fff;
+          td {
+            padding: 9px;
+            &:first-child {
+              border-radius: 11px 0 0 11px;
+            }
+            &:last-child {
+              border-radius: 0 11px 11px 0;
+              color: $green;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__num {
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 14px;
+    border-radius: 100%;
+    background-color: $yellow;
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    &__table {
+      table {
+        min-width: 0;
+        display: block;
+        tbody {
+          display: block;
+          width: 100%;
+        }
+        tr {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 9px;
+          border-radius: 11px;
+          &:first-child {
+            display: none;
+          }
+          &:not(&:first-child) {
+            td {
+              padding: 4px 9px;
+            }
+          }
+          td {
+            &:not(:first-child) {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
   }
 }
 /* /statistics */

@@ -55,20 +55,22 @@ gulp.task('style', function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('browser-sync', function () {
-  if (!server) {
+if (!server) {
+  gulp.task('browser-sync', function () {
     browserSync.init({
       server: {
         baseDir: htmlPath,
       },
       notify: true,
     });
-  } else {
+  });
+}else {
+  gulp.task('browser-sync', function () {
     browserSync.init({
       proxy: 'http://wp-dev.ru/',
     });
-  }
-});
+  });
+}
 
 gulp.task('css-min', function () {
   return gulp.src(cssPath + '/style.css')
