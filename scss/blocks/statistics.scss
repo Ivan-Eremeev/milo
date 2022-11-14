@@ -76,12 +76,13 @@
           flex-direction: column;
           margin-bottom: 9px;
           border-radius: 11px;
+          padding: 10px;
           &:first-child {
             display: none;
           }
           &:not(&:first-child) {
             td {
-              padding: 4px 9px;
+              padding: 2px 0;
             }
           }
           td {

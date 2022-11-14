@@ -1,0 +1,152 @@
+/* professional */
+.professional { 
+  padding: 130px 0 190px;
+  .title {
+    max-width: 900px;
+    margin-bottom: 90px;
+  }
+  &__items {
+    margin-bottom: 100px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px 40px;
+    background-color: $grayL;
+    border-radius: 30px;
+    position: relative;
+  }
+  &__content {
+    padding-right: 70px;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 160%;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    b {
+      font-weight: 800;
+    }
+  }
+  &__bottom {
+    margin-top: auto;
+  }
+  &__price {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 50px;
+    color: $yellow;
+  }
+  &__icon {
+    max-width: 65px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  &__ps {
+    font-size: 16px;
+    line-height: 20px;
+    color: #838689;
+  }
+  &__install {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__install-content {
+    max-width: 500px;
+  }
+  &__install-title {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+  &__install-text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__install-btn {
+    position: relative;
+    .btn {
+      min-width: 270px;
+    }
+  }
+  &__arrow {
+    width: 440px;
+    fill: $yellow;
+    position: absolute;
+    top: 30px;
+    right: calc(100% + 20px);
+    z-index: -1;
+    svg {
+      width: 440px;
+      height: 220px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__arrow {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    .title {
+      margin-bottom: 30px;
+    }
+    &__items {
+      margin-bottom: 50px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__price {
+      font-size: 30px;
+    }
+    &__ps {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__install {
+      flex-wrap: wrap;
+    }
+    &__install-content {
+      max-width: none; 
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__install-title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    &__install-text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__install-btn {
+      
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__item {
+      padding: 25px 20px;
+    }
+    &__icon {
+      position: static;
+      margin-bottom: 10px;
+    }
+    &__content {
+      padding-right: 0;
+    }
+  }
+}
+/* /professional */
