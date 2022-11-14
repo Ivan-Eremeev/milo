@@ -69,7 +69,7 @@ block content
         .container 
           .profit__head 
             h2.title Profit with NiceBot is really easy
-            .btn.btn--yellow Sign up now
+            .btn.btn--yellow.d-md-inline-flex.d-none Sign up now
           .profit__items 
             .profit__item 
               .profit__icon 1
@@ -77,21 +77,23 @@ block content
                 .profit__title Open an account with a broker
                 .profit__text Detailed instructions in your account
             .profit__arrow 
-              svg(class="icon-arrow-right-long")
-                use(xlink:href="img/sprite.svg#arrow-right-long")
+              svg(class="icon-arrow-right")
+                use(xlink:href="img/sprite.svg#arrow-right")
             .profit__item 
               .profit__icon 2
               .profit__content 
                 .profit__title Connect the robot
                 .profit__text Even a 10 year old can handle it
             .profit__arrow 
-              svg(class="icon-arrow-right-long")
-                use(xlink:href="img/sprite.svg#arrow-right-long")
+              svg(class="icon-arrow-right")
+                use(xlink:href="img/sprite.svg#arrow-right")
             .profit__item 
               .profit__icon 3
               .profit__content 
                 .profit__title Withdraw profit
                 .profit__text There's no point in postponing the decision
+          .profit__btn.d-md-none
+            .btn.btn--yellow Sign up now
       // /profit
 
     include core/footer.pug

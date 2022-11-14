@@ -20,7 +20,8 @@
 			<header class="header" id="headerSticky">
 				<div class="container"> 
 					<div class="header__container"> <a class="header__logo" href="home.html"> <img src="img/logo.svg" alt=""></a>
-						<div class="header__menu"> 
+						<div class="header__menu" id="menu">
+							<div class="header__menu-close d-sm-none js-drop-close" data-drop="menu"></div><a class="header__logo d-md-none" href="home.html"><img src="img/logo.svg" alt=""></a>
 							<nav class="header__nav"> 
 								<ul class="header__list"> 
 									<li> <a href="#">Home </a></li>
@@ -30,16 +31,30 @@
 									<li> <a href="#">Affiliate program</a></li>
 								</ul>
 							</nav>
+							<div class="header__userblock d-md-none">
+								<div class="header__lang"> <a href="#"> <img src="img/lang.svg" alt=""></a></div>
+								<div class="header__buttons"> 
+									<div class="btn btn--gray">Login</div>
+									<div class="btn btn--yellow">Sign in</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__userblock d-none d-md-flex">
 							<div class="header__lang"> <a href="#"> <img src="img/lang.svg" alt=""></a></div>
 							<div class="header__buttons"> 
 								<div class="btn btn--gray">Login</div>
 								<div class="btn btn--yellow">Sign in</div>
 							</div>
 						</div>
+						<div class="header__hamburger hamburger hamburger--squeeze d-md-none js-drop-menu" data-drop="menu">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
 					</div>
 				</div>
+				<!--	/header-->
 			</header>
-			<!--	/header-->
 			<div class="content"> 
 				<div class="wrapper">
 					<!-- swiper-->

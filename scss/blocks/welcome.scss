@@ -98,9 +98,58 @@
     bottom: 0;
     right: 0;
   }
+  @include media-breakpoint-down(xxl) {
+    &__lists {
+      flex-wrap: wrap;
+    }
+    &__arrow {
+      right: -40px;
+      bottom: 10px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    
+  }
   @include media-breakpoint-down(lg) {
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__img {
+      flex-shrink: 1;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__content {
+      padding-top: 0;
+    }
+    &__arrow {
+      transform: rotate(100deg);
+      bottom: -120px;
+      right: auto;
+      left: -20px;
+    }
     &__item-price {
       font-size: 30px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__arrow {
+      display: none;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    &__subtitle {
+      font-size: 22px;
+    }
+    &__list {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__item {
+      padding: 25px 20px 15px;
     }
   }
 }
