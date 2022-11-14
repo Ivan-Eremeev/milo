@@ -302,4 +302,29 @@ block content
                 use(xlink:href="img/sprite.svg#arrow3")
       // /easy
 
+      // watch
+      section.watch.section-gray
+        .container 
+          .row.align-items-center
+            .col-lg-6.align-self-end.order-2.order-lg-1
+              .watch__img 
+                img(src="img/phone.png", alt="")
+            .col-lg-6.order-1.order-lg-2
+              .watch__content 
+                h2.title Watch your 
+                  span profits grow
+                ul.watch__list 
+                  li Telegram bot will send reports on open and closed deals
+                  li Monitor what is happening on the account in the MetaTrader 4 mobile terminal
+                  li See a detailed report in your personal account on our website 
+                .watch__text Download mobile terminal 
+                  b MetaTrader 4 
+                  | to your phone and watch the trades of the robot: 
+                .watch__stores 
+                  a(href="#").watch__store 
+                    img(src="img/appstore.png", alt="")
+                  a(href="#").watch__store 
+                    img(src="img/gplay.png", alt="")
+      // /watch
+
     include core/footer.pug
