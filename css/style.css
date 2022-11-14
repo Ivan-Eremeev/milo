@@ -6874,7 +6874,7 @@ body.lock {
     margin-top: 0;
   }
   #headerSticky.sticky .header__userblock {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 767.98px) {

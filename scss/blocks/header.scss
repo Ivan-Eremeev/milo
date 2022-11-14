@@ -213,7 +213,7 @@
         margin-top: 0;
       }
       .header__userblock {
-        display: none;
+        display: none !important;
       }
     }
     @include media-breakpoint-down(md) {
