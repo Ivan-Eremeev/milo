@@ -12,16 +12,51 @@ block content
     main.content 
 
       // welcome-page
-      .welcome-page
+      section.welcome-page
         .container 
           .row.gy-3 
             .col-lg-3 
               .welcome-page__img 
                 img(src="img/icons/bot.svg", alt="")
             .col-lg-9 
-              .title 
+              h1.title 
                 span MiloBot is a professional exchange 
                 | robot developed by traders and analysts with a simple interface for ordinary people
       // /welcome-page
+
+      // advantages
+      .advantages.section-gray
+        .container 
+          .advantages__items 
+            .row.gy-1.gy-md-3.justify-content-center
+              .col-xxl-3.col-lg-4.col-sm-6
+                .advantages__item 
+                  .advantages__icon 
+                    img(src="img/icons/algorithm.svg", alt="")
+                  .advantages__content 
+                    .advantages__title Author's trading algorithm
+                    .advantages__text 3 Trading Strategies Using Market Reversal Indicators
+              .col-xxl-3.col-lg-4.col-sm-6
+                .advantages__item 
+                  .advantages__icon 
+                    img(src="img/icons/wallet.svg", alt="")
+                  .advantages__content 
+                    .advantages__title We trust the robot our money
+                    .advantages__text View independent monitoring of an account with a balance of more than $45,000
+              .col-xxl-3.col-lg-4.col-sm-6
+                .advantages__item 
+                  .advantages__icon 
+                    img(src="img/icons/chart2.svg", alt="")
+                  .advantages__content 
+                    .advantages__title Stable profit
+                    .advantages__text There are no strong fluctuations in profits, on average from 6 to 9% per month
+              .col-xxl-3.col-lg-4.col-sm-6
+                .advantages__item 
+                  .advantages__icon 
+                    img(src="img/icons/time.svg", alt="")
+                  .advantages__content 
+                    .advantages__title History tests since 2015
+                    .advantages__text Designed, tested and tuned solely on the basis of historical data tests
+      // /advantages
 
     include core/footer.pug

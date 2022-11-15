@@ -8140,6 +8140,61 @@ body.lock {
 }
 
 /* /welcome-page */
+/* advantages */
+.advantages {
+  padding: 96px 0;
+}
+.advantages__item {
+  height: 100%;
+  padding: 47px 20px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.advantages__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 53px;
+  height: 56px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+.advantages__title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.advantages__text {
+  font-size: 21px;
+  line-height: 28px;
+}
+@media (max-width: 767.98px) {
+  .advantages {
+    padding: 50px 0;
+  }
+  .advantages__items .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .advantages__items .row > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .advantages__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .advantages__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/* /advantages */
 /* footer */
 .footer {
   padding: 70px 0 40px;
