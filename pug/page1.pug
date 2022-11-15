@@ -1,0 +1,27 @@
+extends core/base.pug
+
+block title 
+  title Страница 1
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    main.content 
+
+      // welcome-page
+      .welcome-page
+        .container 
+          .row.gy-3 
+            .col-lg-3 
+              .welcome-page__img 
+                img(src="img/icons/bot.svg", alt="")
+            .col-lg-9 
+              .title 
+                span MiloBot is a professional exchange 
+                | robot developed by traders and analysts with a simple interface for ordinary people
+      // /welcome-page
+
+    include core/footer.pug

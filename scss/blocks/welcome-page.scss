@@ -1,0 +1,16 @@
+/* welcome-page */
+.welcome-page { 
+  padding: 150px 0 160px;
+  &__img {
+    img {
+      width: 236px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 70px 0;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
+}
+/* /welcome-page */
