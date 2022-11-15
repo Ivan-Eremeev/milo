@@ -1,5 +1,134 @@
 /* footer */
 .footer { 
-  
+  padding: 70px 0 40px;
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__logo {
+    max-width: 80px;
+    display: inline-block;
+    margin-right: 80px;
+    flex-shrink: 0;
+  }
+  &__nav {
+    
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: -70px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 19px;
+    li {
+      margin-left: 70px;
+      a {
+        color: $black;
+      }
+    }
+    
+  }
+  &__lang {
+    flex-shrink: 0;
+    margin-right: 16px;
+    cursor: pointer;
+    user-select: none;
+    img {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__social {
+    display: flex;
+    margin-left: auto;
+  }
+  &__social-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  &__social-icon {
+    flex-shrink: 0;
+    margin-left: 8px;
+    margin-top: 8px;
+    fill: $gray;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+    &:hover {
+      fill: darken($gray, 10%);
+    }
+  }
+  &__ps {
+    max-width: 920px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  @include media-breakpoint-down(xl) {
+    &__list {
+      margin-left: -40px;
+      li {
+        margin-left: 40px;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__logo {
+      margin-bottom: 20px;
+      margin-right: 50px;
+    }
+    &__top {
+      flex-wrap: wrap;
+    }
+    &__social {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__top {
+      margin-bottom: 20px;
+    }
+    &__nav {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__social {
+      margin-left: 0;
+    }
+    &__social {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    &__top {
+      justify-content: center;
+    }
+    &__logo {
+      margin-right: 0;
+    }
+    &__list {
+      display: block;
+      li {
+        a {
+          display: block;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
 }
 /* /footer */
