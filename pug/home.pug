@@ -346,4 +346,45 @@ block content
                   use(xlink:href="img/sprite.svg#tg")
       // /start
 
+      // reviews 
+      section.reviews.section-gray
+        .container 
+          .reviews__head 
+            h2.title Look at the reviews of satisfied customers
+            .reviews__arrow 
+              svg(class="icon-arrow5")
+                use(xlink:href="img/sprite.svg#arrow5")
+          .reviews__slider 
+            #reviewsSlider 
+              .swiper-wrapper 
+                .swiper-slide 
+                  .reviews__item 
+                    .reviews__img 
+                      img(src="img/user.jpg", alt="")
+                    .reviews__content 
+                      .reviews__name Steve Jobs
+                      .reviews__statistics Trades: 
+                        b 15 week 
+                        | / Profit: 
+                        span 31.3%
+                      .reviews__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                .swiper-slide 
+                  .reviews__item 
+                    .reviews__img 
+                      img(src="img/user.jpg", alt="")
+                    .reviews__content 
+                      .reviews__name Steve Jobs
+                      .reviews__statistics Trades: 
+                        b 15 week 
+                        | / Profit: 
+                        span 31.3%
+                      .reviews__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              .reviews__arrowbtn.reviews__arrowbtn--prev.swiper-button-prev
+                svg(class="icon-arrow-left")
+                  use(xlink:href="img/sprite.svg#arrow-left")
+              .reviews__arrowbtn.reviews__arrowbtn--next.swiper-button-next
+                svg(class="icon-arrow-right")
+                  use(xlink:href="img/sprite.svg#arrow-right")
+      // /reviews 
+
     include core/footer.pug
