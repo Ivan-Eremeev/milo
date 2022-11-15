@@ -327,4 +327,23 @@ block content
                     img(src="img/gplay.png", alt="")
       // /watch
 
+      // start
+      section.start
+        .container 
+          .row 
+            .col-lg-6.col-md-7.position-relative.order-2.order-md-1
+              h2.title Easy start step by step with 
+                span telegram bot
+              .start__text Take the first step towards your first transactions on the stock exchange
+              .start__btn 
+                a(href="#").btn.btn--yellow Start making a profit
+              .start__arrow 
+                svg(class="icon-arrow4")
+                  use(xlink:href="img/sprite.svg#arrow4")
+            .col-lg-6.col-md-5.d-flex.justify-content-md-center.order-1.order-md-2
+              .start__img 
+                svg(class="icon-tg")
+                  use(xlink:href="img/sprite.svg#tg")
+      // /start
+
     include core/footer.pug
