@@ -81,4 +81,26 @@ block content
               img(src="img/icons/rocket2.svg", alt="")
       // /rocket
 
+      // strategy
+      .strategy
+        .container 
+          .row.gy-3 
+            .col-lg-6 
+              .title 
+                span Due to the bidirectional strategy, 
+                | MiloBot makes it possible to earn at all stages of the market
+              .strategy__text MiloBot is an algorithmic advisor that uses 3 strategies to make a profit. Strategies work sequentially, transferring control of orders from the first to the next, thereby minimizing risks, consistently earning you profit
+            .col-lg-6 
+              ul.strategy__list 
+                li 
+                  span.strategy__num 1
+                  | The first and main strategy receives the main income by fixing profits, after which they transfer control of orders to the second strategy
+                li 
+                  span.strategy__num 2
+                  | The second one works according to the individual strategy «Averaging grid» (the author’s view of this type of trading) accurately brings the remaining orders into profit
+                li 
+                  span.strategy__num 3
+                  | The third strategy turns on and earns profit while the second one brings orders into profit
+      // /strategy
+
     include core/footer.pug

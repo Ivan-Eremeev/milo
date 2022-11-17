@@ -1,0 +1,78 @@
+/* strategy */
+.strategy { 
+  padding: 140px 0;
+  .row {
+    margin-left: -40px;
+    margin-right: -40px;
+    > * {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: -70px;
+    font-size: 21px;
+    line-height: 30px;
+    li {
+      display: flex;
+      margin-top: 70px;
+    }
+  }
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 35px;
+    border: 10px solid $yellow;
+    border-radius: 100%;
+    box-shadow: 0px 5px 20px rgb(238 201 18 / 70%);
+    font-size: 26px;
+    font-weight: bold;
+  }
+  @include media-breakpoint-down(xl) {
+    .row {
+      margin-left: -20px;
+      margin-right: -20px;
+      > * {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__list {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: -20px;
+      li {
+        margin-top: 20px;
+      }
+    }
+    &__num {
+      width: 60px;
+      height: 60px;
+      border-width: 6px;
+      margin-right: 20px;
+      font-size: 22px;
+    }
+  }
+}
+/* /strategy */
