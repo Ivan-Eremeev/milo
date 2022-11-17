@@ -7398,7 +7398,7 @@ body.lock {
   padding: 10px 0;
 }
 .statistics__table table tr:not(.statistics__table table tr:first-child) {
-  background-color: #fff;
+  background-color: #F1F4F9;
 }
 .statistics__table table tr:not(.statistics__table table tr:first-child) td {
   padding: 9px;
@@ -7430,6 +7430,9 @@ body.lock {
   font-size: 12px;
   font-weight: 800;
   color: #fff;
+}
+.statistics.section-gray .statistics__table table tr:not(.statistics.section-gray .statistics__table table tr:first-child) {
+  background-color: #fff;
 }
 @media (max-width: 767.98px) {
   .statistics {
@@ -8195,6 +8198,93 @@ body.lock {
 }
 
 /* /advantages */
+/* rocket */
+.rocket {
+  padding: 130px 0 90px;
+}
+.rocket__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rocket__content {
+  position: relative;
+}
+.rocket .title {
+  margin-bottom: 10px;
+}
+.rocket__text {
+  max-width: 480px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+.rocket__btn .btn {
+  width: 100%;
+  max-width: 365px;
+}
+.rocket__img {
+  width: 200px;
+  margin-left: 100px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.rocket__arrow {
+  fill: #EEC912;
+  position: absolute;
+  right: -10px;
+  bottom: 50px;
+}
+.rocket__arrow svg {
+  width: 450px;
+  height: 100px;
+}
+@media (max-width: 1249.98px) {
+  .rocket__arrow {
+    width: 350px;
+    right: -30px;
+    bottom: 30px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .rocket__arrow {
+    width: 300px;
+    right: -60px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rocket__img {
+    margin-left: 0;
+  }
+  .rocket__arrow {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .rocket {
+    padding: 50px 0;
+  }
+  .rocket__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .rocket__content {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .rocket__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .rocket__img {
+    margin-bottom: 30px;
+  }
+}
+
+/* /rocket */
 /* footer */
 .footer {
   padding: 70px 0 40px;

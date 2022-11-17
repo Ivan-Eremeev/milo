@@ -1,0 +1,78 @@
+/* rocket */
+.rocket { 
+  padding: 130px 0 90px;
+  &__container {
+    display: flex;
+  }
+  &__content {
+    position: relative;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  &__text {
+    max-width: 480px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  &__btn {
+    .btn {
+      width: 100%;
+      max-width: 365px;
+    }
+  }
+  &__img {
+    width: 200px;
+    margin-left: 100px;
+    flex-shrink: 0;
+  }
+  &__arrow {
+    fill: $yellow;
+    position: absolute;
+    right: -10px;
+    bottom: 50px;
+    svg {
+      width: 450px;
+      height: 100px;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    &__arrow {
+      width: 350px;
+      right: -30px;
+      bottom: 30px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__arrow {
+      width: 300px;
+      right: -60px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__img {
+      margin-left: 0;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    &__container {
+      flex-direction: column;
+    }
+    &__content {
+      order: 1;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__img {
+      margin-bottom: 30px;
+    }
+  }
+}
+/* /rocket */

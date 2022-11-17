@@ -59,4 +59,26 @@ block content
                     .advantages__text Designed, tested and tuned solely on the basis of historical data tests
       // /advantages
 
+      include blocks/statistics.pug
+
+      +statistics
+
+      // rocket
+      section.rocket.section-gray
+        .container 
+          .rocket__container 
+            .rocket__content 
+              h2.title 
+                span Install the MiloBot robot 
+                | now and the first deals will be made today
+              .rocket__text Take the first step towards your first transactions on the stock exchange
+              .rocket__btn 
+                a(href="#").btn.btn--yellow Start making a profit
+              .rocket__arrow 
+                svg(class="icon-arrow6")
+                  use(xlink:href="img/sprite.svg#arrow6")
+            .rocket__img 
+              img(src="img/icons/rocket2.svg", alt="")
+      // /rocket
+
     include core/footer.pug

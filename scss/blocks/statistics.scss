@@ -31,7 +31,7 @@
           }
         }
         &:not(&:first-child) {
-          background-color: #fff;
+          background-color: $grayL;
           td {
             padding: 9px;
             &:first-child {
@@ -60,6 +60,17 @@
     font-size: 12px;
     font-weight: 800;
     color: #fff;
+  }
+  &.section-gray {
+    .statistics__table {
+      table {
+        tr {
+          &:not(&:first-child) {
+            background-color: #fff;
+          }
+        }
+      }
+    }
   }
   @include media-breakpoint-down(md) {
     padding: 50px 0;
