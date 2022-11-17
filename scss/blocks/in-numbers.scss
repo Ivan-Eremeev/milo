@@ -1,0 +1,119 @@
+/* in-numbers */
+.in-numbers { 
+  padding: 80px 0 110px;
+  &__head {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  &__fraction {
+    width: 80px;
+    margin-left: 20px;
+    flex-shrink: 0;
+  }
+  &__items {
+    overflow: hidden;
+    .row {
+      margin-top: -75px;
+      margin-left: -40px;
+      margin-right: -40px;
+      > * {
+        padding-top: 75px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  }
+  &__item {
+    
+  }
+  &__num {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 50px;
+    color: $yellow;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 160px;
+  }
+  &__title {
+    max-width: 720px;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 42px;
+    position: relative;
+  }
+  &__btn {
+    margin-left: 20px;
+    width: 100%;
+    max-width: 310px;
+    .btn {
+      width: 100%;
+    }
+  }
+  &__arrow {
+    width: 250px;
+    fill: $yellow;
+    position: absolute;
+    bottom: calc(100% - 20px);
+    right: -160px;
+    svg {
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    &__head {
+      margin-bottom: 40px;
+    }
+    &__items {
+      .row {
+        margin-top: -30px;
+        margin-left: -20px;
+        margin-right: -20px;
+        > * {
+          padding-top: 30px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    }
+    &__num {
+      font-size: 40px;
+      line-height: 46px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__arrow {
+      display: none;
+    }
+    &__bottom {
+      flex-wrap: wrap;
+      padding-top: 50px;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      margin-left: 0;
+    }
+    &__fraction {
+      width: 50px;
+    }
+  }
+}
+/* /in-numbers */

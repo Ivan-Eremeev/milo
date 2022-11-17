@@ -19,12 +19,14 @@
     box-shadow: 0px 6px 16px rgba(238, 201, 18, 0.7);
     &:hover {
       background-color: lighten($yellow, 10%);
+      color: $black;
     }
   }
   &--gray {
     background-color: $gray;
     &:hover {
       background-color: lighten($gray, 5%);
+      color: $black;
     }
   }
   @include media-breakpoint-down(md) {
