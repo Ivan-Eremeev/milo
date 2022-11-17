@@ -1,0 +1,59 @@
+extends core/base.pug
+
+block title 
+  title Страница 2
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // faq
+      .faq
+        .container 
+          .faq__slider 
+            #faqSlider 
+              .swiper-wrapper 
+                .swiper-slide 
+                  .faq__item 
+                    .faq__icon 
+                      svg(class="icon-algorithm")
+                        use(xlink:href="img/sprite.svg#algorithm")
+                    .faq__text Author's trading algorithm?
+                .swiper-slide 
+                  .faq__item 
+                    .faq__icon 
+                      svg(class="icon-vallet")
+                        use(xlink:href="img/sprite.svg#vallet")
+                    .faq__text How to deposit funds
+                .swiper-slide 
+                  .faq__item 
+                    .faq__icon 
+                      svg(class="icon-bot")
+                        use(xlink:href="img/sprite.svg#bot")
+                    .faq__text How to connect The Milo robot
+                .swiper-slide 
+                  .faq__item 
+                    .faq__icon 
+                      svg(class="icon-house")
+                        use(xlink:href="img/sprite.svg#house")
+                    .faq__text How to withdraw the earned money?
+                .swiper-slide 
+                  .faq__item 
+                    .faq__icon 
+                      svg(class="icon-vallet")
+                        use(xlink:href="img/sprite.svg#vallet")
+                    .faq__text How to deposit funds
+                .swiper-slide 
+                  .faq__item 
+                    .faq__icon 
+                      svg(class="icon-bot")
+                        use(xlink:href="img/sprite.svg#bot")
+                    .faq__text How to connect The Milo robot
+              .faq__scrollbar.swiper-scrollbar
+      // /faq
+
+    include core/footer.pug

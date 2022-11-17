@@ -1,0 +1,47 @@
+/* faq */
+.faq { 
+  padding-top: 50px;
+  &__slider {
+    position: relative;
+    overflow: hidden;
+    .swiper-slide {
+      height: auto;
+      padding-bottom: 55px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: $grayL;
+    user-select: none;
+    transition: .3s;
+    &:hover {
+      background-color: $yellow;
+      .faq__icon {
+        stroke: #fff;
+      }
+    }
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    stroke: $black;
+    transition: .3s;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &__scrollbar {
+    background-color: #eee;
+    .swiper-scrollbar-drag {
+      background-color: $yellow;
+    }
+  }
+}
+/* /faq */

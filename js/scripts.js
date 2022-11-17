@@ -29,6 +29,20 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Слайдер в вопросах
+  if ($('#faqSlider').length) {
+    const faqSlider = new Swiper('#faqSlider', {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      grabCursor: true,
+      mousewheel: true,
+      scrollbar: {
+        el: ".faq__scrollbar",
+        dragSize: 240,
+      },
+    });
+  }
+
   // // Air Datepicker | Календарь
   // new AirDatepicker('#airDatepicker', {
   //   position: 'right top',
