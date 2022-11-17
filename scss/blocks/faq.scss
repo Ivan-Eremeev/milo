@@ -4,9 +4,9 @@
   &__slider {
     position: relative;
     overflow: hidden;
+    padding-bottom: 55px;
     .swiper-slide {
       height: auto;
-      padding-bottom: 55px;
     }
   }
   &__item {
@@ -28,6 +28,7 @@
   &__icon {
     width: 60px;
     height: 60px;
+    flex-shrink: 0;
     margin-right: 15px;
     stroke: $black;
     transition: .3s;
@@ -41,6 +42,34 @@
     background-color: #eee;
     .swiper-scrollbar-drag {
       background-color: $yellow;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__slider {
+      padding-bottom: 30px;
+    }
+    &__item {
+      padding: 20px;
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__item {
+      flex-direction: column;
+    }
+    &__icon {
+      margin-bottom: 10px;
+    }
+    &__text {
+      text-align: center;
     }
   }
 }

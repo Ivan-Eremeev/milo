@@ -32,14 +32,36 @@ window.onload = function () {
   // Swiper | Слайдер в вопросах
   if ($('#faqSlider').length) {
     const faqSlider = new Swiper('#faqSlider', {
-      slidesPerView: 4,
-      spaceBetween: 40,
+      slidesPerView: 2,
+      spaceBetween: 10,
       grabCursor: true,
       mousewheel: true,
       scrollbar: {
         el: ".faq__scrollbar",
-        dragSize: 240,
+        dragSize: 140,
       },
+      breakpoints: {
+        768: {
+          spaceBetween: 20,
+          scrollbar: {
+            dragSize: 240,
+          },
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          scrollbar: {
+            dragSize: 240,
+          },
+        },
+        1250: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          scrollbar: {
+            dragSize: 240,
+          },
+        }
+      }
     });
   }
 
