@@ -110,4 +110,70 @@ block content
                   a(href="#").btn.btn--yellow By now
       // /actions
 
+      // balance
+      .balance
+        .container 
+          .balance__container 
+            .row 
+              .col-xxl-4.col-md-7
+                .balance__item 
+                  .balance__title Your balance: 
+                  .balance__price $ 6,796.23
+                    svg(class="icon-arrow-up-medium")
+                      use(xlink:href="img/sprite.svg#arrow-up-medium")
+                .balance__item 
+                  .balance__title Your profit: 
+                  .balance__price $ 11,696.18
+                    span +10.98%
+              .col-xxl-3.col-md-5
+                .balance__items-small 
+                  .row
+                    .col-md-12.col-sm-6 
+                      .balance__title-small Profit for the day: 
+                      .balance__price-small $ 185,63 
+                        span +0.1%
+                    .col-md-12.col-sm-6 
+                      .balance__title-small Profit for the week: 
+                      .balance__price-small $ 1,879.63 
+                        span +0.8%
+                    .col-md-12.col-sm-6 
+                      .balance__title-small Profit for the month: 
+                      .balance__price-small $ 10,879.63 
+                        span +18.6%
+                    .col-md-12.col-sm-6 
+                      .balance__title-small Profit for the day: 
+                      .balance__price-small $ 5,63 
+                        span +8.9%
+              .col-xxl-5
+                .balance__lists 
+                  ul.balance__list 
+                    li 
+                      span Created at: 
+                      span 08.12.2021
+                    li 
+                      span License up to: 
+                      span 16.12.2021
+                    li 
+                      span Service up to: 
+                      span 24.12.2021
+                  ul.balance__list 
+                    li 
+                      span Trades pair: 
+                      span 
+                        b 87
+                    li 
+                      span Numder of orders: 
+                      span 
+                        b 868
+                    li 
+                      span Orders in the markets: 
+                      span 
+                        b 478
+            .balance__buttons 
+              .balance__buttons-row 
+                a(href="#").btn.btn--yellow Connection
+                a(href="#").btn.btn--yellow Settings
+                a(href="#").btn.btn--yellow Details
+      // /balance
+
     include core/footer.pug
