@@ -1,10 +1,10 @@
 /* faq */
 .faq { 
-  padding-top: 50px;
+  padding: 70px 0 50px;
   &__slider {
     position: relative;
     overflow: hidden;
-    padding-bottom: 55px;
+    padding-bottom: 70px;
     .swiper-slide {
       height: auto;
     }
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 30px;
+    padding: 20px 30px;
     border-radius: 20px;
     background-color: $grayL;
     user-select: none;
@@ -45,6 +45,7 @@
     }
   }
   @include media-breakpoint-down(md) {
+    padding: 50px 0;
     &__slider {
       padding-bottom: 30px;
     }
