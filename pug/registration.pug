@@ -1,0 +1,47 @@
+extends core/base.pug
+
+block title 
+  title Регистрация
+
+block content
+
+  // login
+  .login
+    .login__gray 
+    .login__logo.d-block.d-md-none
+      .container 
+        img(src="img/logo-gray.svg", alt="")
+    .container 
+      .row.g-0
+        .col-md-6
+          form(action="#").login__form 
+            .login__head 
+              .login__title Welcom, 
+                span MiloBot
+              a(href="#").login__lang 
+                img(src="img/ru.svg", alt="")
+            .login__body 
+              .login__links 
+                a(href="login.html") Login
+                a(href="registration.html").active Registration
+              .login__input 
+                .input 
+                  input(type="text", name="login" placeholder="Login")
+              .login__input 
+                .input 
+                  input(type="text", name="phone" placeholder="Phone")
+              .login__input 
+                .input 
+                  input(type="text", name="email" placeholder="E-mail")
+              .login__input 
+                .input 
+                  input(type="password", name="password" placeholder="Password")
+              .login__input 
+                .input 
+                  input(type="password", name="passwordConfirm" placeholder="Confirm password")
+            .login__btn 
+              button(type="submit").btn.btn--yellow Registration
+        .col-md-6.d-none.d-md-block
+          .login__logo 
+            img(src="img/logo-gray.svg", alt="")
+  // /login
