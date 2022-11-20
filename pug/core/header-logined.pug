@@ -21,20 +21,35 @@ header#headerSticky.header
             li 
               a(href="#") Affiliate program
         .header__userblock.d-md-none
-          .mb-sm-0.mb-1
+          .d-flex.align-items-center.mb-1.mb-sm-0
             .header__lang 
               a(href="#") 
                 img(src="img/ru.svg", alt="")
-          .header__buttons 
-            .btn.btn--gray Login
-            .btn.btn--yellow Sign in
+            .header__notify.active
+              svg(class="icon-bell")
+                use(xlink:href="img/sprite.svg#bell")
+          .d-flex.align-items-center
+            .header__user 
+              .header__user-img 
+                img(src="img/", alt="")
+              .header__user-name Alexander <br>Morozoy
+            .header__exit 
+              svg(class="icon-exit")
+                use(xlink:href="img/sprite.svg#exit")
       .header__userblock.header__userblock--desktop.d-none.d-md-flex
         .header__lang 
           a(href="#") 
             img(src="img/ru.svg", alt="")
-        .header__buttons 
-          .btn.btn--gray Login
-          .btn.btn--yellow Sign in
+        .header__notify.active
+          svg(class="icon-bell")
+            use(xlink:href="img/sprite.svg#bell")
+        .header__user 
+          .header__user-img 
+            img(src="img/", alt="")
+          .header__user-name Alexander <br>Morozoy
+        .header__exit 
+          svg(class="icon-exit")
+            use(xlink:href="img/sprite.svg#exit")
       .header__hamburger.hamburger.hamburger--squeeze.d-md-none.js-drop-menu(data-drop="menu")
         .hamburger-box
           .hamburger-inner
