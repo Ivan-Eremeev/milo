@@ -9573,6 +9573,9 @@ body.lock {
   }
 }
 @media (max-width: 575.98px) {
+  .balance__container {
+    padding: 35px 20px;
+  }
   .balance__buttons .btn {
     max-width: none;
   }

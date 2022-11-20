@@ -244,6 +244,9 @@
     }
   }
   @include media-breakpoint-down(sm) {
+    &__container {
+      padding: 35px 20px;
+    }
     &__buttons {
       .btn {
         max-width: none;
