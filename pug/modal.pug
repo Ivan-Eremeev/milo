@@ -1,0 +1,125 @@
+extends core/base.pug
+
+block title 
+  title Модалка
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      .navpage.section-gray
+        .container
+          ul 
+            li 
+              a(href="home.html" data-bs-toggle="modal" data-bs-target="#modal") Модалка
+
+      // update
+      #modal.modal.fade.update
+        .update__dialog.modal-dialog.modal-dialog-scrollable.modal-dialog-centered
+          .update__content.modal-content
+            .update__head 
+              .update__title Last update: 
+                span 22:45:13
+              .btn-close(data-bs-dismiss="modal")
+            .update__body.modal-body 
+              .update__row 
+                .row 
+                  .col-sm-6 
+                    .update__item 
+                      .update__item-title Balance/Equity
+                      .update__item-prices 
+                        .update__item-price $ 80,896
+                  .col-sm-6 
+                    .update__item 
+                      .update__item-title Gain profit
+                      .update__item-prices 
+                        .update__item-price $ 168,870.87 
+                        .update__item-percent +18.50%
+              .update__row 
+                .row 
+                  .col-sm-4 
+                    .update__item2 
+                      .update__item2-title Today:
+                      .update__item2-price 0.00 USD
+                      .update__item2-percent 0.00%
+                  .col-sm-4 
+                    .update__item2 
+                      .update__item2-title In a week
+                      .update__item2-price 26.88 USD
+                      .update__item2-percent 18.50%
+                  .col-sm-4 
+                    .update__item2 
+                      .update__item2-title In a month
+                      .update__item2-price 18.68 USD
+                      .update__item2-percent 16.88%
+              .update__row 
+                .row 
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency EUR/USD
+                        .update__item3-percent -0.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency EUR/RUB
+                        .update__item3-percent -18.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency AUD/USD
+                        .update__item3-percent -18.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency EUR/USD
+                        .update__item3-percent -0.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency CHF/JPY
+                        .update__item3-percent -0.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency EUR/GBP
+                        .update__item3-percent -18.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency AUD/NZD
+                        .update__item3-percent -18.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+                  .col-sm-6 
+                    .update__item3 
+                      .update__item3-row 
+                        .update__item3-currency GBP/CHF
+                        .update__item3-percent -0.59%
+                      .update__item3-row 
+                        .update__item3-num Price: 1.12321
+                        .update__item3-price -56.23$
+    include core/footer.pug

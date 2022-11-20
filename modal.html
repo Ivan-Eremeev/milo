@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Модалка</title>
+		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body> 
+		<div class="page"> 
+			<!-- header-->
+			<header class="header" id="headerSticky">
+				<div class="container"> 
+					<div class="header__container"> <a class="header__logo" href="home.html"> <img src="img/logo.svg" alt=""></a>
+						<div class="header__menu" id="menu">
+							<div class="header__menu-close d-sm-none js-drop-close" data-drop="menu"></div><a class="header__logo d-md-none" href="home.html"><img src="img/logo.svg" alt=""></a>
+							<nav class="header__nav"> 
+								<ul class="header__list"> 
+									<li> <a href="#">Home </a></li>
+									<li> <a class="active" href="#">Statistics</a></li>
+									<li> <a href="#">About MiloBot </a></li>
+									<li> <a href="#">Reviewrs </a></li>
+									<li> <a href="#">Affiliate program</a></li>
+								</ul>
+							</nav>
+							<div class="header__userblock d-md-none">
+								<div class="header__lang"> <a href="#"> <img src="img/ru.svg" alt=""></a></div>
+								<div class="header__buttons"> 
+									<div class="btn btn--gray">Login</div>
+									<div class="btn btn--yellow">Sign in</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__userblock header__userblock--desktop d-none d-md-flex">
+							<div class="header__lang"> <a href="#"> <img src="img/ru.svg" alt=""></a></div>
+							<div class="header__buttons"> 
+								<div class="btn btn--gray">Login</div>
+								<div class="btn btn--yellow">Sign in</div>
+							</div>
+						</div>
+						<div class="header__hamburger hamburger hamburger--squeeze d-md-none js-drop-menu" data-drop="menu">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--	/header-->
+			</header>
+			<div class="content"> 
+				<div class="navpage section-gray">
+					<div class="container">
+						<ul> 
+							<li> <a href="home.html" data-bs-toggle="modal" data-bs-target="#modal">Модалка</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- update-->
+				<div class="modal fade update" id="modal">
+					<div class="update__dialog modal-dialog modal-dialog-scrollable modal-dialog-centered">
+						<div class="update__content modal-content">
+							<div class="update__head"> 
+								<div class="update__title">Last update: <span>22:45:13</span></div>
+								<div class="btn-close" data-bs-dismiss="modal"></div>
+							</div>
+							<div class="update__body modal-body"> 
+								<div class="update__row"> 
+									<div class="row"> 
+										<div class="col-sm-6"> 
+											<div class="update__item"> 
+												<div class="update__item-title">Balance/Equity</div>
+												<div class="update__item-prices"> 
+													<div class="update__item-price">$ 80,896</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item"> 
+												<div class="update__item-title">Gain profit</div>
+												<div class="update__item-prices"> 
+													<div class="update__item-price">$ 168,870.87 </div>
+													<div class="update__item-percent">+18.50%</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="update__row"> 
+									<div class="row"> 
+										<div class="col-sm-4"> 
+											<div class="update__item2"> 
+												<div class="update__item2-title">Today:</div>
+												<div class="update__item2-price">0.00 USD</div>
+												<div class="update__item2-percent">0.00%</div>
+											</div>
+										</div>
+										<div class="col-sm-4"> 
+											<div class="update__item2"> 
+												<div class="update__item2-title">In a week</div>
+												<div class="update__item2-price">26.88 USD</div>
+												<div class="update__item2-percent">18.50%</div>
+											</div>
+										</div>
+										<div class="col-sm-4"> 
+											<div class="update__item2"> 
+												<div class="update__item2-title">In a month</div>
+												<div class="update__item2-price">18.68 USD</div>
+												<div class="update__item2-percent">16.88%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="update__row"> 
+									<div class="row"> 
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">EUR/USD</div>
+													<div class="update__item3-percent">-0.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">EUR/RUB</div>
+													<div class="update__item3-percent">-18.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">AUD/USD</div>
+													<div class="update__item3-percent">-18.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">EUR/USD</div>
+													<div class="update__item3-percent">-0.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">CHF/JPY</div>
+													<div class="update__item3-percent">-0.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">EUR/GBP</div>
+													<div class="update__item3-percent">-18.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">AUD/NZD</div>
+													<div class="update__item3-percent">-18.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6"> 
+											<div class="update__item3"> 
+												<div class="update__item3-row"> 
+													<div class="update__item3-currency">GBP/CHF</div>
+													<div class="update__item3-percent">-0.59%</div>
+												</div>
+												<div class="update__item3-row"> 
+													<div class="update__item3-num">Price: 1.12321</div>
+													<div class="update__item3-price">-56.23$</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-->
+			<footer class="footer">
+				<div class="container"> 
+					<div class="footer__top"> <a class="footer__logo" href="#"><img src="img/logo.svg" alt=""></a>
+						<nav class="footer__nav"> 
+							<ul class="footer__list"> 
+								<li> <a href="#">Disclaimer</a></li>
+								<li> <a href="#">Privacy policy</a></li>
+								<li> <a href="#">Rensponsibility of the parties</a></li>
+							</ul>
+						</nav>
+						<div class="footer__social">
+							<div class="footer__lang"> <img src="img/ru.svg" alt=""></div>
+							<div class="footer__social-row">  <a class="footer__social-icon" href="#"> 
+									<svg class="icon-tw">
+										<use xlink:href="img/sprite.svg#tw"></use>
+									</svg></a><a class="footer__social-icon" href="#"> 
+									<svg class="icon-vk">
+										<use xlink:href="img/sprite.svg#vk"></use>
+									</svg></a><a class="footer__social-icon" href="#"> 
+									<svg class="icon-insta">
+										<use xlink:href="img/sprite.svg#insta"></use>
+									</svg></a><a class="footer__social-icon" href="#"> 
+									<svg class="icon-tg2">
+										<use xlink:href="img/sprite.svg#tg2"></use>
+									</svg></a><a class="footer__social-icon" href="#"> 
+									<svg class="icon-fb">
+										<use xlink:href="img/sprite.svg#fb"></use>
+									</svg></a></div>
+						</div>
+					</div>
+					<div class="footer__ps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+				</div>
+			</footer>
+			<!--	/footer-->
+		</div>
+		<script src="js/jquery.min.js"> </script>
+		<script src="js/plugins/swiper-bundle.min.js"> </script>
+		<script src="js/plugins/bootstrap.bundle.min.js"> </script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
