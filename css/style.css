@@ -9686,12 +9686,6 @@ body.lock {
 }
 .update__body {
   padding: 0;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.update__body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
 }
 .update__content {
   padding: 64px 70px 70px;
