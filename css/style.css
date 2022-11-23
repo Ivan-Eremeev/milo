@@ -9022,21 +9022,46 @@ body.lock {
 .faq__item:hover .faq__icon {
   stroke: #fff;
 }
+.faq__item:hover .faq__text {
+  color: #fff;
+}
 .faq__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 60px;
   height: 60px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 15px;
+  fill: transparent;
   stroke: #0B1726;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+.faq__icon .icon-house {
+  width: 38px;
+  height: 38px;
+}
+.faq__icon .icon-algorithm {
+  width: 40px;
+  height: 40px;
+}
+.faq__icon .icon-vallet {
+  width: 40px;
+  height: 40px;
+}
 .faq__text {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .faq__scrollbar {
   background-color: #eee;

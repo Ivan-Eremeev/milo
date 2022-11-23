@@ -23,20 +23,39 @@
       .faq__icon {
         stroke: #fff;
       }
+      .faq__text {
+        color: #fff;
+      }
     }
   }
   &__icon {
+    display: flex;
+    align-items: center;
     width: 60px;
     height: 60px;
     flex-shrink: 0;
     margin-right: 15px;
+    fill: transparent;
     stroke: $black;
     transition: .3s;
+    .icon-house {
+      width: 38px;
+      height: 38px;
+    }
+    .icon-algorithm {
+      width: 40px;
+      height: 40px;
+    }
+    .icon-vallet {
+      width: 40px;
+      height: 40px;
+    }
   }
   &__text {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    transition: .3s;
   }
   &__scrollbar {
     background-color: #eee;
