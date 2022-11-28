@@ -41,6 +41,7 @@ window.onload = function () {
         el: ".faq__scrollbar",
         dragSize: 140,
         draggable: true,
+        snapOnRelease: false,
       },
       breakpoints: {
         768: {
