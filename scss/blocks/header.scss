@@ -105,8 +105,10 @@
       right: -4px;
       opacity: 0;
     }
-    &:hover {
-      stroke: $yellow;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        stroke: $yellow;
+      }
     }
     &.active {
       &:after {
@@ -149,8 +151,10 @@
       width: 18px;
       height: 18px;
     }
-    &:hover {
-      stroke: $yellow;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        stroke: $yellow;
+      }
     }
   }
   @include media-breakpoint-down(xxl) {
@@ -178,16 +182,18 @@
       margin-top: 20px;
     }
     &__nav {
+      width: 100%;
       padding-left: 0;
-      margin-left: auto;
-      margin-right: auto;
+    }
+    &__list {
+      justify-content: space-between;
     }
   }
   @include media-breakpoint-down(md) {
-    padding: 10px 0;
+    padding: 20px 0;
     &__menu {
       max-width: 400px;
-      padding: 20px 20px;
+      padding: 30px 25px 20px;
       flex-direction: column;
       align-items: flex-start;
       margin-top: 0;
@@ -199,7 +205,7 @@
       transition: .3s;
       z-index: 10;
       .header__logo {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
       }
       &.open {
         left: 0;
@@ -214,6 +220,15 @@
     }
     &__list {
       display: block;
+      font-size: 20px;
+      font-weight: bold;
+      li {
+        a {
+          &.active {
+            color: #fff;
+          }
+        }
+      }
     }
     &__logo {
       max-width: 80px;
@@ -221,9 +236,27 @@
     &__buttons {
       .btn {
         &--yellow {
-          border: 1px solid $gray;
+          border: 1px solid #fff;
+          color: #fff;
+        }
+        &--gray {
+          border: 1px solid #fff;
+          background-color: #fff;
+          color: $yellow;
         }
       }
+    }
+    &__hamburger {
+      padding-right: 0;
+      .hamburger-box {
+        display: block;
+      }
+    }
+    &__exit {
+      stroke: #fff;
+    }
+    &__notify {
+      stroke: #fff;
     }
   }
   @include media-breakpoint-down(sm) {
@@ -234,8 +267,8 @@
       width: 30px;
       height: 30px;
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 25px;
       cursor: pointer;
       user-select: none;
       &:after,&:before {
@@ -296,7 +329,7 @@
       }
     }
     @include media-breakpoint-down(md) {
-      padding: 10px 0;
+      padding: 15px 0;
       .header__menu {
         width: 100%;
         max-width: 400px;

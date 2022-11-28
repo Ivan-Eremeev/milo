@@ -17,17 +17,21 @@
     background-color: $yellow;
     box-shadow: 0px 6px 16px rgba(238, 201, 18, 0.7);
     color: $black;
-    &:hover {
-      background-color: lighten($yellow, 10%);
-      color: $black;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: lighten($yellow, 10%);
+        color: $black;
+      }
     }
   }
   &--gray {
     background-color: $gray;
     color: #fff;
-    &:hover {
-      background-color: lighten($gray, 5%);
-      color: #fff;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: lighten($gray, 5%);
+        color: #fff;
+      }
     }
   }
   @include media-breakpoint-down(md) {

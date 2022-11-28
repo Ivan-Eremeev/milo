@@ -44,8 +44,13 @@
   &__ps {
     
   }
+  @include media-breakpoint-down(lg) {
+    &__right {
+      padding-top: 80px;
+    }
+  }
   @include media-breakpoint-down(md) {
-    padding: 50px 0;
+    padding: 100px 0;
     &__title {
       font-size: 26px;
       line-height: 30px;
@@ -61,6 +66,9 @@
     }
     &__ps {
       font-size: 14px;
+    }
+    &__right {
+      padding-top: 50px;
     }
   }
 }

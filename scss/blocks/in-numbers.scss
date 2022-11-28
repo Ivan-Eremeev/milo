@@ -71,7 +71,7 @@
     }
   }
   @include media-breakpoint-down(md) {
-    padding: 50px 0;
+    padding: 100px 0;
     &__head {
       margin-bottom: 40px;
     }
@@ -113,6 +113,18 @@
     }
     &__fraction {
       width: 50px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__items {
+      .row {
+        margin-left: -10px;
+        margin-right: -10px;
+        > * {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
     }
   }
 }

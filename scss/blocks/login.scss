@@ -140,6 +140,7 @@
     }
   }
   @include media-breakpoint-down(md) {
+    padding-bottom: 50px;
     &__head {
       margin-bottom: 30px;
     }
@@ -151,10 +152,10 @@
       display: none;
     }
     &__logo {
-      padding: 20px 0;
+      padding: 30px 0;
       min-height: 0;
       background-color: $grayL;
-      margin-bottom: 20px;
+      margin-bottom: 100px;
       img {
         max-width: 100px;
         margin-left: 0;

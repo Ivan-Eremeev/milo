@@ -70,7 +70,7 @@
     align-items: center;
     height: 23px;
     flex-grow: 1;
-    margin-top: 25px;
+    margin-top: 56px;
     fill: #D0D0D0;
     &:before {
       content: '';
@@ -86,19 +86,26 @@
     }
   }
   @include media-breakpoint-down(lg) {
+    &__head {
+      .title {
+        max-width: none;
+      }
+    }
     &__item {
       flex-shrink: 1;
     }
     &__arrow {
       display: none;
     }
+    &__items {
+      margin-bottom: 50px;
+    }
   }
   @include media-breakpoint-down(md) {
-    padding: 50px 0;
+    padding: 100px 0;
     &__head {
       margin-bottom: 30px;
       .title {
-        max-width: none;
         margin-left: auto;
         margin-right: auto;
       }
@@ -108,8 +115,8 @@
       margin-bottom: 30px;
     }
     &__item {
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
+      max-width: none;
     }
     &__title {
       font-size: 22px;

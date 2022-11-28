@@ -52,8 +52,15 @@
       }
     }
   }
+  @include media-breakpoint-down(lg) {
+    &__list {
+      li {
+        align-items: center;
+      }
+    }
+  }
   @include media-breakpoint-down(md) {
-    padding: 50px 0;
+    padding: 100px 0;
     &__text {
       font-size: 18px;
       line-height: 24px;

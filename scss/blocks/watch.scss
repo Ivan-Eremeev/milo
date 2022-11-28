@@ -1,7 +1,7 @@
 /* watch */
 .watch { 
-  padding-top: 86px;
-  &__img {
+  // padding-top: 86px;
+  &__img {padding-top: 86px;
     img {
       display: block;
     }
@@ -56,8 +56,14 @@
       margin-right: 15px;
     }
   }
+  @include media-breakpoint-down(lg) {
+    padding-top: 40px;
+    &__img {
+      padding-top: 0;
+    }
+  }
   @include media-breakpoint-down(md) {
-    padding-top: 50px;
+    padding-top: 100px;
     &__content {
       padding-top: 0;
     }
@@ -75,6 +81,25 @@
     }
     &__text {
       font-size: 16px;
+    }
+    &__img {
+      max-width: 350px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+    overflow: hidden;
+    &__img {
+      max-width: none;
+      margin: 0 -20px;
+      padding: 100px 20px 0;
+      background-color: #fff;
+      img {
+        width: 350px;
+      }
+    }
+    &__content {
+      padding-top: 50px;
     }
   }
 }

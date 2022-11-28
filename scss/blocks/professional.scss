@@ -93,9 +93,16 @@
     &__arrow {
       display: none;
     }
+    &__install {
+      flex-wrap: wrap;
+    }
+    &__install-content {
+      max-width: none;
+      margin-bottom: 50px;
+    }
   }
   @include media-breakpoint-down(md) {
-    padding: 50px 0;
+    padding: 100px 0;
     .title {
       margin-bottom: 30px;
     }
@@ -120,8 +127,6 @@
       flex-wrap: wrap;
     }
     &__install-content {
-      max-width: none; 
-      width: 100%;
       margin-bottom: 30px;
     }
     &__install-title {
@@ -139,9 +144,12 @@
   @include media-breakpoint-down(sm) {
     &__item {
       padding: 25px 20px;
+      text-align: center;
     }
     &__icon {
       position: static;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 10px;
     }
     &__content {

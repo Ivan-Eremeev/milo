@@ -20,6 +20,14 @@ header#headerSticky.header
               a(href="#") Reviewrs 
             li 
               a(href="#") Affiliate program
+          .d-flex.align-items-center.mt-2
+            .header__user 
+              .header__user-img 
+                img(src="img/", alt="")
+              .header__user-name Alexander...
+            .header__exit 
+              svg(class="icon-exit")
+                use(xlink:href="img/sprite.svg#exit")
         .header__userblock.d-md-none
           .d-flex.align-items-center.mb-1.mb-sm-0
             .header__lang 
@@ -28,14 +36,6 @@ header#headerSticky.header
             .header__notify.active
               svg(class="icon-bell")
                 use(xlink:href="img/sprite.svg#bell")
-          .d-flex.align-items-center
-            .header__user 
-              .header__user-img 
-                img(src="img/", alt="")
-              .header__user-name Alexander <br>Morozoy
-            .header__exit 
-              svg(class="icon-exit")
-                use(xlink:href="img/sprite.svg#exit")
       .header__userblock.header__userblock--desktop.d-none.d-md-flex
         .header__lang 
           a(href="#") 
