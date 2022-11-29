@@ -118,7 +118,7 @@ window.onload = function () {
   // Таймер
   function timer() {
     // конечная дата, например 1 июля 2021
-    const deadline = (function (y, m, d) { return new Date(y, m - 1, d); })(2022, 11, 29);
+    const deadline = (function (y, m, d) { return new Date(y, m - 1, d); })(2023, 11, 29);
     // id таймера
     let timerId = null;
     // склонение числительных

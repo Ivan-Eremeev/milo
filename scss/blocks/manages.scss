@@ -71,5 +71,11 @@
       padding-top: 50px;
     }
   }
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    &__icon-row {
+      justify-content: center;
+    }
+  }
 }
 /* /manages */

@@ -8262,6 +8262,16 @@ body.lock {
     padding-top: 50px;
   }
 }
+@media (max-width: 575.98px) {
+  .manages {
+    text-align: center;
+  }
+  .manages__icon-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
 
 /* /manages */
 /* easy */
@@ -8487,7 +8497,7 @@ body.lock {
   .watch__img {
     max-width: none;
     margin: 0 -20px;
-    padding: 100px 20px 0;
+    padding: 0 20px 0;
     background-color: #fff;
   }
   .watch__img img {
@@ -8495,6 +8505,7 @@ body.lock {
   }
   .watch__content {
     padding-top: 50px;
+    padding-bottom: 100px;
   }
 }
 
