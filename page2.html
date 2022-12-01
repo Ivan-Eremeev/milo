@@ -29,13 +29,23 @@
 								</ul>
 								<div class="d-flex align-items-center mt-2 d-md-none">
 									<div class="header__user"> 
-										<div class="header__user-img"> <img src="img/" alt=""></div>
-										<div class="header__user-name">Alexander...</div>
-									</div>
-									<div class="header__exit"> 
-										<svg class="icon-exit">
-											<use xlink:href="img/sprite.svg#exit"></use>
-										</svg>
+										<div class="header__user-block" id="slide-user-menu">
+											<div class="header__user-img"> <img src="img/" alt=""></div>
+											<div class="header__user-name">Alexander...</div>
+											<div class="header__exit"> 
+												<svg class="icon-exit">
+													<use xlink:href="img/sprite.svg#exit"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="header__user-drop" id="userMenuMobile">
+											<ul class="header__user-list"> 
+												<li> <a href="#">Пункт меню 1</a></li>
+												<li> <a href="#">Пункт меню 2</a></li>
+												<li> <a href="#">Пункт меню 3</a></li>
+												<li> <a href="#">Пункт меню 4</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</nav>
@@ -73,8 +83,18 @@
 								</svg>
 							</div>
 							<div class="header__user"> 
-								<div class="header__user-img"> <img src="img/" alt=""></div>
-								<div class="header__user-name">Alexander <br>Morozoy</div>
+								<div class="header__user-block js-drop-btn" data-drop="userMenu">
+									<div class="header__user-img"> <img src="img/" alt=""></div>
+									<div class="header__user-name">Alexander <br>Morozoy</div>
+								</div>
+								<div class="header__user-drop" id="userMenu">
+									<ul class="header__user-list"> 
+										<li> <a href="#">Пункт меню 1</a></li>
+										<li> <a href="#">Пункт меню 2</a></li>
+										<li> <a href="#">Пункт меню 3</a></li>
+										<li> <a href="#">Пункт меню 4</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="header__exit"> 
 								<svg class="icon-exit">

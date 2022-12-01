@@ -152,4 +152,14 @@ window.onload = function () {
   }
   timer();
 
+  // Выпадайка меню пользователя
+  function userMenuSlide() {
+    let btn = $('#slide-user-menu');
+    let drop = $('#userMenuMobile');
+    btn.on('click', function () {
+      drop.stop().slideToggle(300);
+    })
+  }
+  userMenuSlide();
+
 }

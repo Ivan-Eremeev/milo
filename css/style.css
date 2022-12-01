@@ -7199,13 +7199,26 @@ body.lock {
   opacity: 1;
 }
 .header__user {
+  margin-right: 27px;
+  position: relative;
+}
+.header__user-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 27px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .header__user-block:hover .header__user-name {
+    color: #EEC912;
+  }
 }
 .header__user-img {
   width: 50px;
@@ -7227,6 +7240,37 @@ body.lock {
   font-weight: 700;
   font-size: 16px;
   line-height: 15px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.header__user-drop {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+}
+.header__user-drop.open {
+  display: block;
+}
+.header__user-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.header__user-list li a {
+  color: #0B1726;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .header__user-list li a:hover {
+    color: #EEC912;
+  }
 }
 .header__exit {
   -ms-flex-negative: 0;
@@ -7385,6 +7429,22 @@ body.lock {
   .header__buttons .btn {
     width: 100%;
     margin-top: 15px;
+  }
+  .header__user {
+    margin-bottom: 10px;
+  }
+  .header__user-drop {
+    padding: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: static;
+  }
+  .header__user-list {
+    margin-top: 10px;
+  }
+  .header__exit {
+    margin-left: 20px;
   }
 }
 @media (max-width: 575.98px) {

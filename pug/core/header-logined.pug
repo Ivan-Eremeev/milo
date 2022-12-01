@@ -22,12 +22,23 @@ header#headerSticky.header
               a(href="#") Affiliate program
           .d-flex.align-items-center.mt-2.d-md-none
             .header__user 
-              .header__user-img 
-                img(src="img/", alt="")
-              .header__user-name Alexander...
-            .header__exit 
-              svg(class="icon-exit")
-                use(xlink:href="img/sprite.svg#exit")
+              .header__user-block#slide-user-menu
+                .header__user-img 
+                  img(src="img/", alt="")
+                .header__user-name Alexander...
+                .header__exit 
+                  svg(class="icon-exit")
+                    use(xlink:href="img/sprite.svg#exit")
+              .header__user-drop#userMenuMobile
+                ul.header__user-list 
+                  li 
+                    a(href="#") Пункт меню 1
+                  li 
+                    a(href="#") Пункт меню 2
+                  li 
+                    a(href="#") Пункт меню 3
+                  li 
+                    a(href="#") Пункт меню 4
         .header__userblock.d-md-none
           .d-flex.align-items-center.mb-1.mb-md-0.flex-wrap
             .header__lang 
@@ -65,9 +76,20 @@ header#headerSticky.header
           svg(class="icon-bell")
             use(xlink:href="img/sprite.svg#bell")
         .header__user 
-          .header__user-img 
-            img(src="img/", alt="")
-          .header__user-name Alexander <br>Morozoy
+          .header__user-block.js-drop-btn(data-drop="userMenu")
+            .header__user-img 
+              img(src="img/", alt="")
+            .header__user-name Alexander <br>Morozoy
+          .header__user-drop#userMenu
+            ul.header__user-list 
+              li 
+                a(href="#") Пункт меню 1
+              li 
+                a(href="#") Пункт меню 2
+              li 
+                a(href="#") Пункт меню 3
+              li 
+                a(href="#") Пункт меню 4
         .header__exit 
           svg(class="icon-exit")
             use(xlink:href="img/sprite.svg#exit")
