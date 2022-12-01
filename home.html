@@ -29,8 +29,15 @@
 								</ul>
 							</nav>
 							<div class="header__userblock d-md-none">
-								<div class="mb-sm-0 mb-1">
-									<div class="header__lang"> <a href="#"> <img src="img/ru.svg" alt=""></a></div>
+								<div class="mb-md-0 mb-1 flex-shrink-0">
+									<div class="header__lang"> 
+										<ul class="header__lang-drop-list">
+											<li> <a href="#"> <img src="img/icons/ru.svg" alt=""></a></li>
+											<li> <a href="#"> <img src="img/icons/en.svg" alt=""></a></li>
+											<li> <a href="#"> <img src="img/icons/it.svg" alt=""></a></li>
+											<li> <a href="#"> <img src="img/icons/gm.svg" alt=""></a></li>
+										</ul>
+									</div>
 								</div>
 								<div class="header__buttons"> 
 									<div class="btn btn--gray">Login</div>
@@ -39,7 +46,15 @@
 							</div>
 						</div>
 						<div class="header__userblock header__userblock--desktop d-none d-md-flex">
-							<div class="header__lang"> <a href="#"> <img src="img/ru.svg" alt=""></a></div>
+							<div class="header__lang"> <img class="js-drop-btn" src="img/icons/ru.svg" alt="" data-drop="langMenu">
+								<div class="header__lang-drop" id="langMenu"> 
+									<ul class="header__lang-drop-list">
+										<li> <a href="#"> <img src="img/icons/en.svg" alt=""></a></li>
+										<li> <a href="#"> <img src="img/icons/it.svg" alt=""></a></li>
+										<li> <a href="#"> <img src="img/icons/gm.svg" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
 							<div class="header__buttons"> 
 								<div class="btn btn--gray">Login</div>
 								<div class="btn btn--yellow">Sign in</div>

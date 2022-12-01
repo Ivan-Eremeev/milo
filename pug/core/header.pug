@@ -21,17 +21,38 @@ header#headerSticky.header
             li 
               a(href="#") Affiliate program
         .header__userblock.d-md-none
-          .mb-sm-0.mb-1
+          .mb-md-0.mb-1.flex-shrink-0
             .header__lang 
-              a(href="#") 
-                img(src="img/ru.svg", alt="")
+              ul.header__lang-drop-list
+                li 
+                  a(href="#") 
+                    img(src="img/icons/ru.svg", alt="")
+                li 
+                  a(href="#") 
+                    img(src="img/icons/en.svg", alt="")
+                li 
+                  a(href="#") 
+                    img(src="img/icons/it.svg", alt="")
+                li 
+                  a(href="#") 
+                    img(src="img/icons/gm.svg", alt="")
           .header__buttons 
             .btn.btn--gray Login
             .btn.btn--yellow Sign in
       .header__userblock.header__userblock--desktop.d-none.d-md-flex
         .header__lang 
-          a(href="#") 
-            img(src="img/ru.svg", alt="")
+          img(src="img/icons/ru.svg", alt="").js-drop-btn(data-drop="langMenu")
+          .header__lang-drop#langMenu 
+            ul.header__lang-drop-list
+              li 
+                a(href="#") 
+                  img(src="img/icons/en.svg", alt="")
+              li 
+                a(href="#") 
+                  img(src="img/icons/it.svg", alt="")
+              li 
+                a(href="#") 
+                  img(src="img/icons/gm.svg", alt="")
         .header__buttons 
           .btn.btn--gray Login
           .btn.btn--yellow Sign in

@@ -7095,10 +7095,53 @@ body.lock {
   align-items: center;
 }
 .header__lang {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   margin-left: auto;
   margin-right: 30px;
+  position: relative;
 }
-.header__lang:hover {
+.header__lang > img {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.header__lang > img:hover {
+  opacity: 0.8;
+}
+.header__lang-drop {
+  display: none;
+  padding: 5px;
+  border-radius: 18px;
+  background-color: #EEC912;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.header__lang-drop.open {
+  display: block;
+}
+.header__lang-drop-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.header__lang-drop-list li {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.header__lang-drop-list li a {
+  display: inline-block;
+  width: 30px;
+}
+.header__lang-drop-list li a:hover {
   opacity: 0.8;
 }
 .header__buttons {
@@ -7317,7 +7360,31 @@ body.lock {
     stroke: #fff;
   }
   .header__notify {
+    margin: 5px 0;
     stroke: #fff;
+  }
+  .header__lang-drop-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .header__userblock {
+    display: block;
+    width: 100%;
+  }
+  .header__lang {
+    margin-left: 0;
+  }
+  .header__buttons {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -15px;
+  }
+  .header__buttons .btn {
+    width: 100%;
+    margin-top: 15px;
   }
 }
 @media (max-width: 575.98px) {
@@ -7355,22 +7422,6 @@ body.lock {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg);
     -ms-transform: translate(-50%, -50%) rotate(-45deg);
     transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  .header__userblock {
-    display: block;
-    width: 100%;
-  }
-  .header__lang {
-    margin-left: 0;
-  }
-  .header__buttons {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: -15px;
-  }
-  .header__buttons .btn {
-    width: 100%;
-    margin-top: 15px;
   }
 }
 

@@ -40,8 +40,15 @@
 								</div>
 							</nav>
 							<div class="header__userblock d-md-none">
-								<div class="d-flex align-items-center mb-1 mb-sm-0">
-									<div class="header__lang"> <a href="#"> <img src="img/ru.svg" alt=""></a></div>
+								<div class="d-flex align-items-center mb-1 mb-md-0 flex-wrap">
+									<div class="header__lang"> 
+										<ul class="header__lang-drop-list">
+											<li> <a href="#"> <img src="img/icons/ru.svg" alt=""></a></li>
+											<li> <a href="#"> <img src="img/icons/en.svg" alt=""></a></li>
+											<li> <a href="#"> <img src="img/icons/it.svg" alt=""></a></li>
+											<li> <a href="#"> <img src="img/icons/gm.svg" alt=""></a></li>
+										</ul>
+									</div>
 									<div class="header__notify active">
 										<svg class="icon-bell">
 											<use xlink:href="img/sprite.svg#bell"></use>
@@ -51,7 +58,15 @@
 							</div>
 						</div>
 						<div class="header__userblock header__userblock--desktop d-none d-md-flex">
-							<div class="header__lang"> <a href="#"> <img src="img/ru.svg" alt=""></a></div>
+							<div class="header__lang"> <img class="js-drop-btn" src="img/icons/ru.svg" alt="" data-drop="langMenu">
+								<div class="header__lang-drop" id="langMenu"> 
+									<ul class="header__lang-drop-list">
+										<li> <a href="#"> <img src="img/icons/en.svg" alt=""></a></li>
+										<li> <a href="#"> <img src="img/icons/it.svg" alt=""></a></li>
+										<li> <a href="#"> <img src="img/icons/gm.svg" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
 							<div class="header__notify active">
 								<svg class="icon-bell">
 									<use xlink:href="img/sprite.svg#bell"></use>

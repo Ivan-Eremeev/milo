@@ -29,17 +29,38 @@ header#headerSticky.header
               svg(class="icon-exit")
                 use(xlink:href="img/sprite.svg#exit")
         .header__userblock.d-md-none
-          .d-flex.align-items-center.mb-1.mb-sm-0
+          .d-flex.align-items-center.mb-1.mb-md-0.flex-wrap
             .header__lang 
-              a(href="#") 
-                img(src="img/ru.svg", alt="")
+              ul.header__lang-drop-list
+                li 
+                  a(href="#") 
+                    img(src="img/icons/ru.svg", alt="")
+                li 
+                  a(href="#") 
+                    img(src="img/icons/en.svg", alt="")
+                li 
+                  a(href="#") 
+                    img(src="img/icons/it.svg", alt="")
+                li 
+                  a(href="#") 
+                    img(src="img/icons/gm.svg", alt="")
             .header__notify.active
               svg(class="icon-bell")
                 use(xlink:href="img/sprite.svg#bell")
       .header__userblock.header__userblock--desktop.d-none.d-md-flex
         .header__lang 
-          a(href="#") 
-            img(src="img/ru.svg", alt="")
+          img(src="img/icons/ru.svg", alt="").js-drop-btn(data-drop="langMenu")
+          .header__lang-drop#langMenu 
+            ul.header__lang-drop-list
+              li 
+                a(href="#") 
+                  img(src="img/icons/en.svg", alt="")
+              li 
+                a(href="#") 
+                  img(src="img/icons/it.svg", alt="")
+              li 
+                a(href="#") 
+                  img(src="img/icons/gm.svg", alt="")
         .header__notify.active
           svg(class="icon-bell")
             use(xlink:href="img/sprite.svg#bell")

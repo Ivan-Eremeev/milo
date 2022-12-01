@@ -64,10 +64,47 @@
     align-items: center;
   }
   &__lang {
+    flex-shrink: 0;
     margin-left: auto;
     margin-right: 30px;
-    &:hover {
-      opacity: 0.8;
+    position: relative;
+    > img {
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  &__lang-drop {
+    display: none;
+    padding: 5px;
+    border-radius: 18px;
+    background-color: $yellow;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translate(-50%,0);
+    &.open {
+      display: block;
+    }
+  }
+  &__lang-drop-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: -5px;
+    margin-top: -5px;
+    li {
+      margin-left: 5px;
+      margin-top: 5px;
+      a {
+        display: inline-block;
+        width: 30px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
   }
   &__buttons {
@@ -256,7 +293,27 @@
       stroke: #fff;
     }
     &__notify {
+      margin: 5px 0;
       stroke: #fff;
+    }
+    &__lang-drop-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__userblock {
+      display: block;
+      width: 100%;
+    }
+    &__lang {
+      margin-left: 0;
+    }
+    &__buttons {
+      flex-wrap: wrap;
+      margin-top: -15px;
+      .btn {
+        width: 100%;
+        margin-top: 15px;
+      }
     }
   }
   @include media-breakpoint-down(sm) {
@@ -286,22 +343,6 @@
       }
       &:before {
         transform: translate(-50%,-50%) rotate(-45deg);
-      }
-    }
-    &__userblock {
-      display: block;
-      width: 100%;
-    }
-    &__lang {
-      // margin-bottom: 15px;
-      margin-left: 0;
-    }
-    &__buttons {
-      flex-wrap: wrap;
-      margin-top: -15px;
-      .btn {
-        width: 100%;
-        margin-top: 15px;
       }
     }
   }
